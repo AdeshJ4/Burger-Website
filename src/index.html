@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--~~~~~~~~~~~~~~~ Favicon ~~~~~~~~~~~~~~~-->
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+  <!--~~~~~~~~~~~~~~~ Font Awesome ~~~~~~~~~~~~~~~-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--~~~~~~~~~~~~~~~ Remix Icon ~~~~~~~~~~~~~~~-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <!--~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~-->
+  <link href="/dist/output.css" rel="stylesheet" />
+
+  <title>responsive || burger website</title>
+</head>
+
+<body>
+  <header class="fixed top-0 left-0 w-full bg-primaryColor z-50">
+    <nav class="container relative h-14 flex justify-between items-center">
+      <!-- logo -->
+      <div class="">
+        <a href="#" class="text-2xl uppercase font-oswald">Bur<span class="text-secondaryColor">ger</span></a>
+      </div>
+
+      <!-- Navigation Links -->
+      <div id="nav-menu"
+        class="hidden  absolute top-0 left-0 w-full py-14 border-b border-secondaryColor md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto">
+        <ul class="flex flex-col text-center gap-5 md:flex-row">
+          <li>
+            <a href="#home" class="nav__link hover:text-secondaryColor ease-in duration-200">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="nav__link hover:text-secondaryColor ease-in duration-200">About</a>
+          </li>
+          <li>
+            <a href="#menu" class="nav__link hover:text-secondaryColor ease-in duration-200">Menu</a>
+          </li>
+          <li>
+            <a href="#review" class="nav__link hover:text-secondaryColor ease-in duration-200">Review</a>
+          </li>
+          <li>
+            <a href="#contact" class="nav__link hover:text-secondaryColor ease-in duration-200">Contact</a>
+          </li>
+        </ul>
+
+        <!-- close icon for small devices -->
+        <div id="nav-close" class="absolute top-[0.7rem] right-4 text-2xl cursor-pointer md:hidden">
+          <i class="ri-close-line"></i>
+        </div>
+      </div>
+
+      <!-- icons -->
+      <div class="flex gap-5 items-center">
+        <i class="ri-moon-line cursor-pointer ml-4 text-xl"></i>
+        <div id="hamburger" class="md:hidden">
+          <i class="ri-menu-2-line cursor-pointer text-xl"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home -->
+    <section id="home">
+      <div class="container flex flex-col items-center gap-10 md:flex-row">
+        <div class="md:basis-1/2 lg:basis-2/5 animate-movingY">
+          <img src="./img/home-image.png" alt="Home Image" class="w-60 md:w-80 mx-auto" />
+        </div>
+
+        <div class="text-center md:basis-1/2 md:text-start lg:basis-3/5">
+          <h1 class="home__title">HAPPY TUMMY WITH TASTY BURGERS</h1>
+
+          <!-- Corrected div closing tag -->
+          <div class="separator mx-auto md:mx-0"></div>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+            maiores labore rerum fugit culpa. Nam ipsam vitae
+            maiores id iure deleniti sed cup
+            Reprehenderit unde et aut eos deserunt nihil?
+          </p>
+
+          <div class="text-base flex items-center justify-center gap-4 py-10 md:gap-20 md:justify-start">
+            <div class="text-center">
+              <i class="fa-solid fa-utensils text-secondaryColor text-4xl"></i>
+              <br />
+              Delicious
+            </div>
+
+            <div class="text-center">
+              <i class="fa-solid fa-droplet text-secondaryColor text-4xl"></i>
+              <br />
+              Fresh
+            </div>
+
+            <div class="text-center">
+              <i class="fa-brands fa-envira text-secondaryColor text-4xl"></i>
+              <br />
+              Organic
+            </div>
+          </div>
+          <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category -->
+    <section id="category">
+      <div class="container flex flex-col gap-5 md:flex-row">
+        <!-- Card 1 -->
+        <div class="bg-secondaryColor flex py-1.5 rounded-lg overflow-hidden md:flex-1">
+          <div class="basis-1/3 relative">
+            <img class="absolute w-28 -bottom-4 -left-4" src="img/burger-1.png" alt="category Food">
+          </div>
+          <div>
+            <div class="mb-2">
+              <h4 class="card__title">Food</h4>
+              <p class="text-xs">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <a href="#" class="text-blackColor cursor-pointer">Buy Online</a>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="bg-redColor flex py-1.5 rounded-lg overflow-hidden md:flex-1">
+          <div class="basis-1/3 relative">
+            <img class="absolute w-28 -bottom-4 -left-4" src="img/snack-1.png" alt="category Food">
+          </div>
+          <div>
+            <div class="mb-2">
+              <h4 class="card__title">SNACK</h4>
+              <p class="text-xs">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <a href="#" class="text-secondaryColor cursor-pointer">Buy Online</a>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="bg-greenColor flex py-1.5 rounded-lg overflow-hidden md:flex-1">
+          <div class="basis-1/3 relative">
+            <img class="absolute w-28 -bottom-4 -left-4" src="img/beverage-2.png" alt="category Food">
+          </div>
+          <div>
+            <div class="mb-2">
+              <h4 class="card__title">BEVERAGE</h4>
+              <p class="text-xs">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <a href="#" class="text-secondaryColor cursor-pointer">Buy Online</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- promo -->
+    <section id="promo">
+      <div class="container flex flex-col gap-5 lg:gap-10 lg:flex-row">
+        <!-- card 1 -->
+        <div class="bg-primaryColorLight flex flex-col p-5 rounded-lg md:flex-row md:items-center lg:flex-row-reverse lg:flex-1">
+          <img class="w-40 mx-auto hover:animate-movingY md:mx-5" src="img/promo-1.png" alt="promo image">
+          <div class="space-y-2 pt-5 md:pt-0">
+            <p class="text-xs text-secondaryColor">Payday promo</p>
+            <h3 class="card__title">GET A 10% DISCOUNT ON PAYDAY WEEK</h3>
+            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, recusandae.</p>
+            <a href="#" class="text-xs text-secondaryColor cursor-pointer">Buy Online</a>
+          </div>
+        </div>
+
+        <!-- card 2 -->
+        <div class="bg-primaryColorLight flex flex-col p-5 rounded-lg md:flex-row md:items-center lg:flex-row-reverse lg:flex-1">
+          <img class="w-40 mx-auto hover:animate-movingY md:mx-5" src="img/promo-2.png" alt="promo image">
+          <div class="space-y-2 pt-5 md:pt-0">
+            <p class="text-xs text-secondaryColor">Payday promo</p>
+            <h3 class="card__title">GET A 10% DISCOUNT ON PAYDAY WEEK</h3>
+            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, recusandae.</p>
+            <a href="#" class="text-xs text-secondaryColor cursor-pointer">Buy Online</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- About -->
+     <section id="about">
+        <div class="container flex flex-col gap-10 md:flex-row">
+          <div class="flex-1">
+            <img src="img/about.jpg" alt="about img" class="rounded-lg">
+          </div>
+
+          <div class="flex-1">
+            <h2 class="section__title">Find food and drinks all-in-one place for your best taste</h2>
+            <div class="separator"></div>
+            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus et placeat ipsa modi distinctio velit quam possimus fugiat esse dignissimos!</p>
+            <ul class="grid grid-cols-2 py-5 space-y-1">
+              <li class="text-xs text-paragraphColor"><i class="fa-solid fa-check text-secondaryColor  mr-2"></i>Best Price</li>
+              <li class="text-xs text-paragraphColor"><i class="fa-solid fa-check text-secondaryColor  mr-2"></i>Fresh Ingredients</li>
+              <li class="text-xs text-paragraphColor"><i class="fa-solid fa-check text-secondaryColor  mr-2"></i>Best Service</li>
+              <li class="text-xs text-paragraphColor"><i class="fa-solid fa-check text-secondaryColor  mr-2"></i>Health protocol</li>
+            </ul>
+            <a href="#" class="btn btn-primary">About Us</a>
+          </div>
+        </div>
+     </section>
+
+
+     <!-- Menu -->
+      <section id="menu">
+        <div class="container">
+          <div class="max-w-md mx-auto text-center">
+            <h2 class="section__title">OUR BEST MENU</h2>
+            <div class="separator mx-auto"></div>
+            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, iusto.</p>
+
+            <div class="tabs__wrap">
+              <ul class="flex flex-wrap justify-center gap-3 py-10">
+                <li class="btn bg-primaryColorLight active">All</li>
+                <li class="btn bg-primaryColorLight">Food</li>
+                <li class="btn bg-primaryColorLight">snack</li>
+                <li class="btn bg-primaryColorLight">Beverage</li>
+              </ul>
+            </div>
+
+            
+          </div>
+        </div>
+      </section>
+
+
+  </main>
+  <!-- main.js -->
+  <script src="main.js"></script>
+</body>
+
+</html>
+
+
+<!-- 
+/* ~~~~~~~~~~~~~~~ Remix icon ~~~~~~~~~~~~~~~ */
+<i class="ri-close-line"></i>
+<i class="ri-moon-line"></i>
+<i class="ri-menu-2-line"></i>
+
+/* ~~~~~~~~~~~~~~~ Font awesome ~~~~~~~~~~~~~~~ */
+<i class="fa-solid fa-utensils"></i>
+<i class="fa-solid fa-droplet"></i>
+<i class="fa-brands fa-envira"></i>
+<i class="fa-solid fa-check"></i>
+<i class="fa-solid fa-quote-right"></i>
+<i class="fa-solid fa-paper-plane"></i>
+<i class="fa-solid fa-phone"></i>
+<i class="fa-solid fa-envelope"></i>
+<i class="fa-solid fa-location-dot"></i>
+<i class="fa-brands fa-facebook-f"></i>
+<i class="fa-brands fa-twitter"></i>
+<i class="fa-brands fa-square-instagram"></i>
+<i class="fa-solid fa-arrow-up"></i>
+
+
+
+-->

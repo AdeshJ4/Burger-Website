@@ -1,0 +1,25 @@
+# Ignore node modules (if using npm)
+node_modules/
+
+# Ignore build files
+dist/
+build/
+
+package-lock.json
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Ignore environment files
+.env
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore any IDE or editor files
+.vscode/
+.idea/
+*.swp
