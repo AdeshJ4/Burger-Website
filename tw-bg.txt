@@ -1,0 +1,139 @@
+visit : https://tailwindcss.com/docs/installation
+tw cheetsheet: https://www.creative-tim.com/twcomponents/cheatsheet
+download extension for tw: Tailwind CSS IntelliSense
+
+
+step 1: run: npm init -y   -> will create package.json file
+
+
+
+
+step 2: run: npm install -D tailwindcss
+
+
+
+
+step 3: run: npx tailwindcss init
+above command will create tailwind.config.js file then in that file replace existing content with bellow one:
+tailwind.config.js:
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+
+
+
+
+
+step 4: create a new folder called src and inside that create input.css file and add these content : 
+src/input.css: 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+step 5: now go to your package.json file and add this inside script tag: 
+  "scripts": {
+    "watch": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  },
+
+
+
+
+
+step 6: create index.html file inside src folder: 
+src/index.html
+add this content inside index.html: 
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+  <h1 class="text-3xl font-bold underline">
+    Hello world!
+  </h1>
+</body>
+</html>
+
+
+
+
+
+step 7 : in terminal run : npm run watch 
+
+
+
+
+step 8 : download live server extension and go to index.html file and right click on it and choose "Open with live server"
+
+
+
+
+step 9 : Go to cdnjs.com and search for font-awesome and click on it and then select first link which has "all.min.css" at the end of it. select as a "Copy  Link Tag".
+
+
+
+step 10 : Go to https://remixicon.com/ and click on GitHub icon which is at the right top corner (https://github.com/Remix-Design/RemixIcon?tab=readme-ov-file#cdn). Then go to CDN section
+and copy CDN link and paste in html file. 
+
+
+
+
+
+step 11: we can add our custom colors into tailwind.config.js inside theme -> extends -> colors: {  ... custom colors}, you can name custom colors whatever you want.
+
+
+
+step 12: to make container horizontally center you can give mx-auto or go to tailwind config.js and add another property inside them tag bellow the colors tag, which is container: {center: true}
+
+
+step 13: you can override default screen break points, for that go to tailwind.config.js and add "screens" property.
+
+
+
+
+
+step 14: install swiper js library : 
+visit : https://swiperjs.com/get-started#use-swiper-from-cdn and copy "Use Swiper from CDN" value.
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
