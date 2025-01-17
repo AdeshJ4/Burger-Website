@@ -118,9 +118,12 @@ visit : https://swiperjs.com/get-started#use-swiper-from-cdn and copy "Use Swipe
 
 
 
+step 15: when you click on link from nsvigstion bar then you redirected to that section when that section appear it shows a animation, so for that animation we have 
+to download this following library.
 
+https://scrollrevealjs.org/guide/hello-world.html
 
-
+copy paste this  inside index.js and above main.js script : <script src="https://unpkg.com/scrollreveal"></script>
 
 
 
